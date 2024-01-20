@@ -17,7 +17,7 @@ public class C_quadrantN {
             System.out.println("Quadrant 2");
         } else if (x < 0 && y < 0) {
             System.out.println("Quadrant 3");
-        } else if (x > 0 && y < 0) {
+        } else {
             System.out.println("Quadrant 4");
         }
     }
