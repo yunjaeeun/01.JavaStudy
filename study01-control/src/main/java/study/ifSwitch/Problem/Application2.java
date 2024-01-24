@@ -19,7 +19,7 @@ public class Application2 {
 //        dClass.grade();
 
         /* 5. 알람 시계 */
-        E_clock eClass = new E_clock();
-        eClass.clock();
+//        E_clock eClass = new E_clock();
+//        eClass.clock();
     }
 }
