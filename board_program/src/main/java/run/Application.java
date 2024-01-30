@@ -1,9 +1,12 @@
 package run;
 
+import service.BoardService;
+
 import java.util.Scanner;
 
 public class Application {
 
+    private static final BoardService bs = new BoardService();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -41,13 +44,13 @@ public class Application {
                     }
                     break;
                 case 2:
-                    mm.selectMember(chooseMemberNo());
+//                    mm.selectMember(chooseMemberNo());
                     break;
                 case 3:
-                    mm.registMember(signUp());
+//                    mm.registMember(signUp());
                     break;
                 case 4:
-                    mm.deleteMember(chooseMemberNo());
+                    bs.deleteBoard(chooseBoardNo());
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");
@@ -56,5 +59,11 @@ public class Application {
                     System.out.println("번호를 제대로 다시 입력해 주세요");
             }
         }
+    }
+
+    private static int chooseBoardNo() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("게시글 번호를 입력하세요: ");
+        return sc.nextInt();
     }
 }
