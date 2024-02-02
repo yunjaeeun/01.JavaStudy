@@ -1,4 +1,4 @@
-package study.ifSwitch.Problem.Baek;
+package study.ifSwitch.Problem.Baek.loop;
 
 import java.io.*;
 import java.util.StringTokenizer;

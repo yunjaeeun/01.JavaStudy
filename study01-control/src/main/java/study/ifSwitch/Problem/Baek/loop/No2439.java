@@ -1,4 +1,4 @@
-package study.ifSwitch.Problem.Baek;
+package study.ifSwitch.Problem.Baek.loop;
 
 import java.util.Scanner;
 
@@ -9,11 +9,11 @@ public class No2439 {
         int input = sc.nextInt();
 
         for (int i = 0; i < input; i++) {
-            for (int j = 0; j < input; j++) {
+            for (int j = i; j < input - 1; j++) {
                 System.out.print(" ");
-                for (int k = 0; k < i; k++) {
-                    System.out.print("*");
-                }
+            }
+            for (int k = 0; k < i + 1; k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
