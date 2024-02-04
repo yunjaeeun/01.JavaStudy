@@ -2,6 +2,7 @@ package study.ifSwitch.Problem.Baek.loop;
 
 import java.util.Scanner;
 
+/* a+b를 조금 더 아름답게 출력 */
 public class No11021 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

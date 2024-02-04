@@ -1,6 +1,8 @@
 package aggregate;
 
 import java.io.Serializable;
+import java.lang.reflect.Member;
+import java.util.Objects;
 
 public class Board implements Serializable {
     private int boardNo;        // 게시글 번호
@@ -57,4 +59,5 @@ public class Board implements Serializable {
                 ", categoryType=" + categoryType +
                 '}';
     }
+
 }

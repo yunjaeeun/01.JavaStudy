@@ -2,6 +2,15 @@ package study.ifSwitch.Problem.Baek.loop;
 
 import java.util.Scanner;
 
+/* 반복문을 활용한 별찍기 변형 */
+/* 입력: 5
+ * 출력:
+ *      *
+ *     **
+ *    ***
+ *   ****
+ *  *****
+ */
 public class No2439 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

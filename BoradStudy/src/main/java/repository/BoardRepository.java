@@ -21,6 +21,7 @@ public class BoardRepository {
             ArrayList<Board> boards = new ArrayList<>();
             boards.add(new Board(1,"dongh","아아아아아아앙ㅇㅇㅇ!!!!!","2024-01-30","이잉!", CategoryType.FREE));
             boards.add(new Board(2,"dongh","asdf","2024-01-30","dfsf",CategoryType.QNA));
+            boards.add(new Board(3,"dongh","asdf","2024-01-30","dfsf",CategoryType.QNA));
 
             saveBoards(boards);
         }
@@ -133,9 +134,9 @@ public class BoardRepository {
         return 1;
     }
 
-    public int deleteBoard(int boardNo) {
+    public int deleteBoard(int boardNo, String Member, String YN) {
         for (int i = 0; i < boardList.size(); i++) {
-            if(boardList.get(i).getBoardNo() == boardNo) {     // 지울려는 회원과 같은 회원 번호인 index 찾기
+            if(boardList.get(i).getBoardNo() == boardNo && boardList.get(i).getId().equals(Member) && YN.equals("Y")) {     // 지울려는 회원과 같은 회원 번호인 index 찾기
 
                 /* 설명. 프로그램 상에서 회원을 관리하는 memberList 뿐 아니라 DB(회원 파일)도 같이 적용되게 함 */
                 boardList.remove(i);

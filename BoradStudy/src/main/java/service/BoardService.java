@@ -41,8 +41,8 @@ public class BoardService {
         } else System.out.println("검색된 데이터가 없습니다.");
     }
 
-    public void deleteBoard(int boardNo) {
-        int result = br.deleteBoard(boardNo);
+    public void deleteBoard(int boardNo, String Member, String YN) {
+        int result = br.deleteBoard(boardNo, Member, YN);
         if (result > 0) {
             System.out.println(boardNo + "번 게시물 삭제를 성공하였습니다.");
             return;

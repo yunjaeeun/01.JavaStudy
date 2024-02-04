@@ -57,7 +57,7 @@ public class Application {
 //                    bs.selectMember(chooseBoardNo());
                     break;
                 case 3:
-                    bs.deleteBoard(chooseBoardNo());
+                    bs.deleteBoard(chooseBoardNo(), chooseMember(), deleteYN());
                     break;
 //                case 4:
 //                bs.registMember(signUp());
@@ -69,6 +69,19 @@ public class Application {
                     System.out.println("번호를 제대로 다시 입력해 주세요");
             }
         }
+    }
+
+    private static String deleteYN() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("삭제하려면 'Y'를 입력하세요: ");
+
+        return sc.nextLine().toUpperCase();
+    }
+
+    private static String  chooseMember() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("작성자 아이디를 입력하세요:");
+        return sc.nextLine();
     }
 
     private static int chooseBoardNo() {
