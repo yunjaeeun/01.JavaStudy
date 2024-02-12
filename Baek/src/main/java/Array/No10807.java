@@ -1,32 +1,31 @@
 package Array;
 
-import java.io.*;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+/* N개의 정수가 주어졌을 때 정수 v가 몇개인지 구하는 코드 */
 public class No10807 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int a = sc.nextInt();
-        String input = sc.nextLine();
+        int[] ar = new int[a];                      // 길이가 a인 배열 선언
+        for (int i = 0; i < a; i++) {               // 입력값을 배열에 담는 반복문
+            ar[i] = Integer.valueOf(sc.nextInt());
+        }
+        int c = sc.nextInt();
+        int total = 0;
 
-        BufferedReader br = toBufferedReader(input);
-
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
-
-        int N = Integer.valueOf(st.nextToken());            // 계산할 금액(가치의 합)
-
-        int[] array = new int[a];                            // 동전의 종류를 담을 배열
-
-        for (int i = 0; i < N; i++) {                       // 반복문을 돌려 동전의 종류를 담음
-            array[i] = Integer.valueOf(br.readLine());
+        for (int i = 0; i < a; i++) {               // 0번 인덱스 값부터 마지막 인덱스까지 비교후 값이 같으면 갯수를 1 올림
+            if (ar[i] == c){
+                total++;
+            }
         }
 
-    }
+        System.out.println(total);
 
-    public static BufferedReader toBufferedReader(String str){
-        InputStream is = new ByteArrayInputStream(str.getBytes());
-        return new BufferedReader(new InputStreamReader(is));
     }
-
 }
