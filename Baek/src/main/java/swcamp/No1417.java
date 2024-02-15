@@ -9,26 +9,26 @@ public class No1417 {
 
         int person = sc.nextInt();
         int[] arr = new int[person];
+        int dasom = sc.nextInt();
 
-        for (int i = 0; i < person; i++) {
+        for (int i = 0; i < person - 1; i++) {
             arr[i] = sc.nextInt();
         }
 
-        int dasom = arr[0];
 
         int total = 0;
-        arr[0] = 0;
+        Arrays.sort(arr);
         if (person != 1) {
-            while (dasom < arr[person-1]) {
+            while (dasom <= arr[person - 1]) {
+                arr[person - 1] --;
+                dasom++;
+                total++;
                 Arrays.sort(arr);
-                arr[person-1] --;
-                dasom ++;
-                total ++;
             }
-            System.out.println(total + 1);
+            System.out.println(total);
+        } else {
+            System.out.println(0);
         }
-        System.out.println(0);
-
 
 
 //        int total = 0;
