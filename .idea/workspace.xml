@@ -23,8 +23,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/codes/javaStudy/study01-control",
+    "last_opened_file_path": "C:/codes/Backend/01.javaStudy/Baek",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -39,6 +40,7 @@
       <updated>1706620024538</updated>
       <workItem from="1706620025588" duration="83000" />
       <workItem from="1706776364574" duration="18000" />
+      <workItem from="1710134080483" duration="44000" />
     </task>
     <servers />
   </component>
